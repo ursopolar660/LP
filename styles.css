@@ -19,16 +19,18 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
-	background-color: #BEB9B1
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .hero{
+    background-image: linear-gradient(to bottom, #BEB9B1 35%, #f8f8f8 30%, #beb9b1 35%);
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #BEB9B1;
+    /* background-color: #BEB9B1; */
     & img{
         width: 70%;
         /* height: auto; */
