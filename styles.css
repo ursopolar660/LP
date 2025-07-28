@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+/* Reset e configurações básicas */
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+	background-color: #BEB9B1
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BEB9B1;
+    & img{
+        width: 70%;
+        /* height: auto; */
+        background-color: #BEB9B1;
+    }
+}
+
+.middle{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #606060;
+    & img{
+        width: 70%;
+        /* height: auto; */
+        /* background-color: #BEB9B1; */
+    }
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #BEB9B1;
+    & img{
+        width: 70%;
+		background-color: #beb9b1;
+    }
+    & map{
+        display: flex;
+    }
+}
+@media (max-width: 600px){
+	.hero img, .middle img, .footer script img {
+		width: 400px;
+	}
+}
