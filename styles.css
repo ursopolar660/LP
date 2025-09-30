@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 /* Reset e configurações básicas */
 
 
@@ -28,6 +26,7 @@ body{
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: #BEB9B1; */
@@ -36,19 +35,52 @@ body{
         /* height: auto; */
         background-color: #BEB9B1;
     }
+        & a{
+        margin-bottom: 2em;
+        width: 70%;
+        text-transform: uppercase;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        left: 50%;
+        border-radius: 10px;background-image: linear-gradient(to right, #7CB258, #0C7D32);
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 .middle{
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #606060;
     & img{
-        width: 70%;
+        width: 100svw;
         /* height: auto; */
         /* background-color: #BEB9B1; */
+    }
+    & a{
+        margin-bottom: 2em;
+        width: 70%;
+        text-transform: uppercase;
+        padding: 0.5em 1em;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        font-size: 1rem;
+        /* position: absolute; */
+        left: 50%;
+        /* transform: translateX(-60%); */
+        /* font-size: 1.5rem; */
+        /*border: 2px solid white;
+        */border-radius: 10px;
+        /*background-color: #;
+        */background-image: linear-gradient(to right, #7CB258, #0C7D32);
+        transition: all 0.3s ease-in-out;
     }
 }
 
@@ -61,7 +93,7 @@ body{
     align-items: center;
     background-color: #BEB9B1;
     & img{
-        width: 70%;
+        /* width: 70%; */
 		background-color: #beb9b1;
     }
     & map{
@@ -69,7 +101,11 @@ body{
     }
 }
 @media (max-width: 600px){
-	.hero img, .middle img, .footer script img {
-		width: 400px;
+	.hero img, .middle img, .footer img {
+		width: 100svw;
+        height: auto;
 	}
+    .footer img{
+        width: 105%;
+    }
 }
